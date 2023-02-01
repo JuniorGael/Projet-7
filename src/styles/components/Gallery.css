@@ -1,0 +1,27 @@
+.gallery {
+    width: 1240px;
+    margin-top: 40px;
+    background: #F7F7F7;
+    border-radius: 25px;
+}
+
+.galerry-list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        width: 89.286%;
+        /* height: 100%; */
+        background: none;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .galerry-list {
+        flex-basis: column wrap;
+    }
+}
