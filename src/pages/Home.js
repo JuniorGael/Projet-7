@@ -5,10 +5,10 @@ import Gallery from '../components/Gallery';
 
 const Home = () => {
     return (
-      <div className="home">
+      <>
         <Section1 />
         <Gallery />
-      </div>
+      </>
     );
 };
 

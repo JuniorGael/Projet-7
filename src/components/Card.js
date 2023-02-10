@@ -4,10 +4,15 @@ import "../styles/components/Card.css";
 
 const Card = ({ housingData }) => {
   return (
-      <NavLink to={`/Chambers/${housingData.id}`} className="card">
-        <img src={housingData.cover} alt="images de logements" />
+    <div className="card-container">
+      <NavLink to={`/Chambers/${housingData.id}`} className="card-link">
+        <div className="card-img">
+          <img src={housingData.cover} alt="images de logements" />
+          <div className="overlay"></div>
+        </div>
         <h2 className="card-name">{housingData.title}</h2>
       </NavLink>
+    </div>
   );
 };
 

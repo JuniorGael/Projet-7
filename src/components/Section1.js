@@ -1,13 +1,16 @@
 import React from "react";
-import "../styles/components/Section1.css"
-import image from "../assets/images/bg_img.png";
+import "../styles/components/Section1.css";
+import image from "../assets/images/banner.png";
 
 const Section1 = () => {
   return (
-    <div className="section_1">
+    <section className="section_1">
       <img src={image} alt="La brume a la montagne" />
-      <h2 className="section-name">Chez vous, partout et ailleurs</h2>
-    </div>
+      <h2 className="section-name">
+        <span>Chez vous,</span>&nbsp;
+        <span>partout et ailleurs</span>
+      </h2>
+    </section>
   );
 };
 

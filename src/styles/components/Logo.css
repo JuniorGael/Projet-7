@@ -1,19 +1,17 @@
-.logo {
-  width: 210.32px;
-  height: 68px;
-  display: flex;
-}
+/* .logo {
+  margin-left: 40px;
+} */
 
+.logo-link {
+  text-decoration: none;
+  cursor: pointer;
+}
 .logo img {
   height: 50px;
+  object-fit: initial;
 }
 
 @media screen and (max-width: 768px) {
-    .logo {
-        width: 145px;
-        height: 47px;
-    }
-
     .logo img {
         height: 40px;
     }

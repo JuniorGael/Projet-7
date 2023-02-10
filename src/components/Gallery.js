@@ -13,16 +13,15 @@ const Gallery = () => {
       .then((data) => setData(data))
       .catch((error) => console.error(error));
   }, []);
-  console.log(data);
 
   return (
-    <div className="gallery">
-      <ul className="galerry-list">
+    <section className="gallery">
+      {/* <div className="galerry-list"> */}
         {data.map((housingData, index, title) => (
           <Card key={index} housingData={housingData} title={title} />
         ))}
-      </ul>
-    </div>
+      {/* </div> */}
+    </section>
   );
 };
 

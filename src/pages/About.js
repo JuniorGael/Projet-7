@@ -1,7 +1,7 @@
 import React from "react";
 import { accordionData } from "../components/Data";
 import ExpendableColumn from "../components/ExpendableColumn";
-import imageAbout from "../assets/images/bg_imgAbout.png";
+import imageAbout from "../assets/images/image-min.png";
 import "../styles/pages/About.css";
 
 const About = () => {

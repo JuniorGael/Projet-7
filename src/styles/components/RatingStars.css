@@ -1,0 +1,39 @@
+.third-column-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.tags-container {
+  display: flex;
+  margin-top: 10px;
+}
+.tags-items {
+  width: 100px;
+  height: 25px;
+  border: 1px solid #ff6060;
+  background-color: #ff6060;
+  border-radius: 10px;
+  margin: 5px;
+}
+.tagName {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+.rating {
+  display: flex;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .third-column-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .rating {
+    margin: 0;
+  }
+}

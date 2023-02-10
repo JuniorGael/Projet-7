@@ -1,13 +1,18 @@
-.error-container {
+.error404-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.error404-titles {
+  text-align: center;
+}
+
 .errorTitle {
   font-size: 288px;
-  line-height: 411px;
+  margin-top: 70px;
+  /* line-height: 411px; */
   font-weight: 700;
   font-style: normal;
   color: #ff6060;
@@ -16,9 +21,15 @@
 .errorTxt {
   font-size: 36px;
   font-weight: 500;
-  line-height: 51px;
+  /* margin: 30px; */
+  /* line-height: 51px; */
   color: #ff6060;
   font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 .backToHome {
@@ -26,7 +37,8 @@
     text-decoration: underline;
     font-size: 18px;
     font-weight: 500;
-    line-height: 150px;
+    margin-top: 100px;
+    /* line-height: 150px; */
     color: #ff6060;
     font-style: normal;
     cursor: pointer;
@@ -36,14 +48,18 @@
 }
 
 @media screen and (max-width: 768px) {
+    
     .errorTitle {
-      font-size: 200px;
+      font-size: 100px;
+      margin-top: 210px;
     }
+
     .errorTxt {
-      text-align: center;
-      font-size: 30px;
+      font-size: 18px;
     }
+
     .backToHome {
-      font-size: 22px;
+      font-size: 16px;
+      margin-bottom: 170px;
     }
 }

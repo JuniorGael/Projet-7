@@ -1,15 +1,15 @@
 .header {
+    max-width: 1280px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 1240px;
-    height: 68px;
-    margin: 40px auto;
+    align-items: center;
+    margin: 2.5%;
+    margin-inline: auto;
 }
 
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .header {
-        width: 89.286%;
-        height: 47px;
-        margin-inline: auto;
+        width: 95%;
     }
 }

@@ -2,15 +2,13 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import ChambersSecondColumnDetails from "../components/ChambersSecondColumnDetails";
-import ChambersThirdColumnDetails from "../components/ChambersThirdColumnDetails";
+import ChambersDetails from "../components/ChambersDetails";
 import "../styles/pages/Chambers.css";
 
 const Chambers = () => {
-  const [lodgingData, setlodgindData] = useState([]);
+  const [lodgingData, setlodgindData] = useState({});
 
   const { id } = useParams();
-  console.log(id);
 
   useEffect(() => {
     async function fetchData() {
@@ -18,27 +16,31 @@ const Chambers = () => {
         .then((res) => res.json())
         .then((res2) => {
           const logementFound = res2.find((e) => e.id === id);
-          setlodgindData([logementFound]);
+          setlodgindData(logementFound);
         })
         .catch((error) => console.error(error));
     }
     fetchData();
   }, [id]);
-  console.log(lodgingData);
+  
+  const {title, host, location, tags, rating, pictures, description, equipments } = lodgingData;
+  console.log(lodgingData.pictures);
+
   return (
     <div className="chambers-container">
-      {lodgingData.map(({ index, title, host, location, tags }) => (
-        <div className="chambersDetails-container">
-          <ChambersSecondColumnDetails
-            key={index}
-            title={title}
-            hostName={host.name}
-            hostPicture={host.picture}
-            location={location}
-          />
-          <ChambersThirdColumnDetails tags={tags} />
-        </div>
-      ))}
+      {/* <div className="chambersDetails-container"> */}
+        <ChambersDetails
+          title={title}
+          hostName={host && host.name}
+          hostPicture={host && host.picture}
+          location={location}
+          tagsFeatures={tags}
+          ratingStars={rating}
+          slides={pictures}
+          description={description}
+          equipments={equipments}
+        />
+      {/* </div> */}
     </div>
   );
 };

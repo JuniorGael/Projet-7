@@ -4,16 +4,15 @@
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
 }
-
-.footer-img {
-    width: 122px;
-    height: 40px;
+.footer_container img {
+    max-width: 122px;
 }
 
 .footer-content {
+
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -23,8 +22,10 @@
 
 @media screen and (max-width: 768px) {
     .footer_container {
+        /* height: 100%; */
         justify-content: center;
     }
+    
     .footer-content {
         font-size: 18px;
     }

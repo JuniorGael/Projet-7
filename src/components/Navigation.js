@@ -4,29 +4,29 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div className="navbar">
-      <ul className="navbar-list">
+    <nav className="navbar">
+      <div className="navbar-container">
         <NavLink
-          className="navbar-list-link"
+          className="navbar-link"
           to="/"
           style={({ isActive }) => {
             return { textDecoration: isActive ? "underline" : "" };
           }}
         >
-          <li className="navbar-name">Accueil</li>
+          Accueil
         </NavLink>
 
         <NavLink
-          className="navbar-list-link"
+          className="navbar-link"
           to="/About"
           style={({ isActive }) => {
             return { textDecoration: isActive ? "underline" : "" };
           }}
         >
-          <li className="navbar-name">A Propos</li>
+          A Propos
         </NavLink>
-      </ul>
-    </div>
+      </div>
+    </nav>
   );
 };
 

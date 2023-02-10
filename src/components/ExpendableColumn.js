@@ -2,11 +2,11 @@ import React from "react";
 import useOpenExpendable from "./useOpenExpendable";
 import "../styles/components/ExpendableColumn.css";
 
-const ExpendableColumn = ({ title, text }) => {
+const ExpendableColumn = ({ title, text, children }) => {
   const { isOpen, toggle } = useOpenExpendable();
 
   return (
-    <div className="container">
+    <div className="expendable-container">
       <div className="accordionBlock" onClick={toggle}>
         <div className="column-text">{title}</div>
         <button className="expendable-button">
@@ -23,9 +23,11 @@ const ExpendableColumn = ({ title, text }) => {
           </span>
         </button>
       </div>
-      <div className="text-container">
-        {isOpen && <div className="text">{text}</div>}
-      </div>
+      {isOpen && (
+        <div className="text-wrapper">
+          {text} {children}
+        </div>
+      )}
     </div>
   );
 };
