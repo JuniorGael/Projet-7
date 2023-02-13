@@ -16,11 +16,9 @@ const Gallery = () => {
 
   return (
     <section className="gallery">
-      {/* <div className="galerry-list"> */}
         {data.map((housingData, index, title) => (
           <Card key={index} housingData={housingData} title={title} />
         ))}
-      {/* </div> */}
     </section>
   );
 };

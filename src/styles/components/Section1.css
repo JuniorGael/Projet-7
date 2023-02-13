@@ -11,7 +11,7 @@
     position: absolute;
     content: "";
     inset: 0;
-    background: #000;
+    background: var(--quaternaryColor);
     mix-blend-mode: darken;
     opacity: 0.3;
 }
@@ -28,7 +28,7 @@
     font-weight: 500;
     white-space: nowrap;
     margin-inline: 16px;
-    color: #fff;
+    color: var(--tertiaryColor);
 }
 
 @media screen and (max-width: 768px) {

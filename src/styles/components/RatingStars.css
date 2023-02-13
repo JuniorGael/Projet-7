@@ -10,8 +10,8 @@
 .tags-items {
   width: 100px;
   height: 25px;
-  border: 1px solid #ff6060;
-  background-color: #ff6060;
+  border: 1px solid var(--primaryColor);
+  background-color: var(--primaryColor);
   border-radius: 10px;
   margin: 5px;
 }
@@ -19,7 +19,7 @@
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
-  color: #fff;
+  color: var(--tertiaryColor);
   text-align: center;
 }
 .rating {

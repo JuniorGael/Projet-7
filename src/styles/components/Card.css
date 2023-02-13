@@ -5,6 +5,9 @@
 }
 
 .card-link {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
   text-decoration: none;
 }
 
@@ -37,7 +40,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  color: #fff;
+  color: var(--tertiaryColor);
 }
 
 @media screen and (max-width: 768px) {
@@ -48,10 +51,4 @@
     .card-name {
       font-size: 20px;
     }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1440px) {
-  .card-container {
-    margin: 3% 0;
-  }
 }

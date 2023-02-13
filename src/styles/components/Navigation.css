@@ -1,6 +1,3 @@
-/* .navbar {
-    margin-right: 40px;
-} */
 
 .navbar-container {
     display: flex;
@@ -10,8 +7,7 @@
 
 .navbar-link {
     text-decoration: none;
-    /* padding-top: 7px; */
-    color: #ff6060;
+    color: var(--primaryColor);
     white-space: nowrap;
     font-size: 24px;
     font-weight: 500;
@@ -29,9 +25,3 @@
         font-size: 18px;
     }
 }
-
-/* @media screen and (max-width: 1440px) {
-    .navbar-container {
-        padding-right: 10px;
-    }
-} */

@@ -6,27 +6,26 @@
 .second-column-container {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--tertiaryColor);
   margin-top: 20px;
 }
 
 .txt-container {
-  background-color: #fff;
+  background-color: var(--tertiaryColor);
   display: flex;
   flex-direction: column;
   margin: 5px;
-  color: #ff6060;
+  color: var(--primaryColor);
 }
 
 .title {
     font-weight: 500;
-    font-size: 36px;
-    line-height: 50px;
+    font-size: 21px;
 }
 
 .location {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 25px;
 }
 
@@ -39,7 +38,7 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 60px;
-  color: #ff6060;
+  color: var(--primaryColor);
   padding-right: 10px;
 }
 .hostImage {
@@ -76,7 +75,6 @@
     }
 
     .accordion-container {
-      /* margin-top: 46px; */
       flex-direction: column;
     }
 }

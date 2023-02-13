@@ -1,5 +1,4 @@
 .imageSlides-container {
-    /* max-width: 1240px; */
     height: 415px;
 }
 
@@ -24,7 +23,7 @@
     left: 20px;
     z-index: 1;
     cursor: pointer;
-    color: #fff;
+    color: var(--tertiaryColor);
 }
 .rightArrow {
     position: absolute;
@@ -33,7 +32,7 @@
     right: 20px;
     z-index: 1;
     cursor: pointer;
-    color: #fff;
+    color: var(--tertiaryColor);
 }
 .numberOfSlide {
     position: absolute;
@@ -41,7 +40,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px;
-    color: #fff;
+    color: var(--tertiaryColor);
     z-index: 1;
 }
 

@@ -27,7 +27,6 @@ const Chambers = () => {
 
   return (
     <div className="chambers-container">
-      {/* <div className="chambersDetails-container"> */}
         <ChambersDetails
           title={title}
           hostName={host && host.name}
@@ -39,7 +38,6 @@ const Chambers = () => {
           description={description}
           equipments={equipments}
         />
-      {/* </div> */}
     </div>
   );
 };

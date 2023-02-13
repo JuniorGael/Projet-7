@@ -8,7 +8,7 @@
 .accordionBlock {
     display: flex;
     justify-content: space-between;
-    background-color: #ff6060;
+    background-color: var(--primaryColor);
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
@@ -19,12 +19,12 @@
     border: none;
     width: 20px;
     margin-right: 20px;
-    color: #fff;
+    color: var(--tertiaryColor);
     cursor: pointer;
 }
 
 .column-text {
-    color: #fff;
+    color: var(--tertiaryColor);
     font-size: 20px;
     line-height: 34px;
     display: flex;
@@ -36,10 +36,10 @@
 .text-wrapper{
     height: 100%;
     opacity: 1;
-    background-color: #f7f7f7;
+    background-color: var(--secondaryColor);
     text-align: left;
     line-height: 1.5;
-    color: #ff6060;
+    color: var(--primaryColor);
     font-size: 18px;
     font-weight: 400;
     border-radius: 5px;
@@ -58,9 +58,3 @@
         max-height: 350px;
     }
 }
-
-/* @media screen and (max-width: 768px) {
-    .expendable-container {
-        margin-bottom: 32px;
-    }
-} */
