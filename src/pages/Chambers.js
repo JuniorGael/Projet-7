@@ -24,7 +24,6 @@ const Chambers = () => {
   }, [id]);
   
   const {title, host, location, tags, rating, pictures, description, equipments } = lodgingData;
-  console.log(lodgingData.pictures);
 
   return (
     <div className="chambers-container">
