@@ -4,7 +4,7 @@ import "../styles/components/Card.css";
 
 const Card = ({ housingData }) => {
   return (
-    <div className="card-container">
+    <article className="card-container">
       <NavLink to={`/Chambers/${housingData.id}`} className="card-link">
         <div className="card-img">
           <img src={housingData.cover} alt="images de logements" />
@@ -12,7 +12,7 @@ const Card = ({ housingData }) => {
         </div>
         <h2 className="card-name">{housingData.title}</h2>
       </NavLink>
-    </div>
+    </article>
   );
 };
 

@@ -22,22 +22,31 @@ const Chambers = () => {
     }
     fetchData();
   }, [id]);
-  
-  const {title, host, location, tags, rating, pictures, description, equipments } = lodgingData;
+
+  const {
+    title,
+    host,
+    location,
+    tags,
+    rating,
+    pictures,
+    description,
+    equipments,
+  } = lodgingData;
 
   return (
     <div className="chambers-container">
-        <ChambersDetails
-          title={title}
-          hostName={host && host.name}
-          hostPicture={host && host.picture}
-          location={location}
-          tagsFeatures={tags}
-          ratingStars={rating}
-          slides={pictures}
-          description={description}
-          equipments={equipments}
-        />
+      <ChambersDetails
+        title={title}
+        hostName={host && host.name}
+        hostPicture={host && host.picture}
+        location={location}
+        tagsFeatures={tags}
+        ratingStars={rating}
+        slides={pictures}
+        description={description}
+        equipments={equipments}
+      />
     </div>
   );
 };
