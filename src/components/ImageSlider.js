@@ -22,9 +22,11 @@ const ImageSlider = ({ slides }) => {
     <div className="slide-container">
       {slides.length > 1 && (
         <>
+
           <p className="numberOfSlide">
             {currentImage + 1} / {slides.length}
           </p>
+
           <div className="leftArrow" onClick={goToPrevious}>
             <svg
               width="48"
@@ -56,7 +58,6 @@ const ImageSlider = ({ slides }) => {
           </div>
         </>
       )}
-
       <div style={slideStyle} className="bgSlide"></div>
     </div>
   );
