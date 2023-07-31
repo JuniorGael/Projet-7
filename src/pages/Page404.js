@@ -3,6 +3,7 @@ import "../styles/pages/Page404.css";
 import { NavLink } from "react-router-dom";
 
 const Page404 = () => {
+  document.title = 'kasa-Error404';
   return (
     <div className="error404-container">
       <div className="error404-titles">
